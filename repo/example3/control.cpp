@@ -37,5 +37,46 @@ int main() {
     else{
         cout<<"Ambos numeros son impares"<<endl;
     }
+
+    while (x>0)
+    {
+        cout<<"x vale: "<<x<<endl;
+        x--;
+        if (x==5){
+            cout<<"x vale 5, saliendo del ciclo"<<endl;
+            break;
+        }
+    }
+    
+    int arr[5];
+    for(int i=0;i<5;i++){
+        cout<<"Ingrese un numero para la posicion "<<i<<endl;
+        cin>>arr[i];
+        if(arr[i]%2==0){
+            cout<<"El numero es par"<<endl;
+        }
+        else{
+            cout<<"El numero es impar"<<endl;
+        }
+        if(arr[i]>0){
+            cout<<"El numero es positivo"<<endl;
+        }
+        else if(arr[i]<0){
+            cout<<"El numero es negativo"<<endl;
+        }
+        else{
+            cout<<"El numero es cero"<<endl;
+        }
+    }
+
+
+
+    int* intpointer=&arr[0];
+    
+    for(int i=0;i<5;i++){
+        *intpointer=arr[i];
+        intpointer++;
+        cout<<"El valor en la posicion "<<i<<" es: "<<*(intpointer-1)<<endl;
+    }
     return 0;
 }
