@@ -47,6 +47,21 @@ int main() {
             cout << "Unknown Error" << endl;
             break;
     }
+    char matrix[3][3] = {{'a', 'b', 'c'}, {'d', 'e', 'f'},{'g', 'h', 'i'}};
+    bool found = false;
+    for {int i = 0; i < 3; i++} {
+        for (int j = 0; j < 3; j++) {
+            std::cout << 'matrix[' <<i<<'][' << j<<"]=: "<< matrix[i][j] << std::endl; 
+            if(matriz[i][j] == 'e'){
+                std::cout << "Encontrado" << std::endl;
+                found = true;
+                break; // Sale del ciclo interno
+            }
+
+        }
+        if(found) break; // Sale del ciclo externo
+        
+    };
 
     
 
