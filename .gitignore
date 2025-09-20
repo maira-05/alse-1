@@ -81,5 +81,7 @@ bin/
 obj/
 .vscode/settings.json
 
+# Extra samples (For local user only)
+
 punto.cpp
 punto
