@@ -1,4 +1,8 @@
+#ifndef COMPLEX_H
+#define COMPLEX_H
+#endif
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Complex
