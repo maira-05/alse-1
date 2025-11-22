@@ -4,4 +4,3 @@ CREATE TABLE usuarios (
   email TEXT UNIQUE,
   foreign key
 );
-INSERT INTO usuarios (nombre, email) VALUES ('Ana', 'ana@correo.com');
